@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="QuanLyTracNghiemConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="QuanLyTracNghiemConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.QuanLyTracNghiem.Properties.Settings.GlobalReference.Default.QuanLyTracNghiemConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vw_ThongTinDiemHocSinhTableAdapter" GeneratorDataComponentClassName="vw_ThongTinDiemHocSinhTableAdapter" Name="vw_ThongTinDiemHocSinh" UserDataComponentName="vw_ThongTinDiemHocSinhTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="QuanLyTracNghiemConnectionString (Settings)" DbObjectName="QuanLyTracNghiem.dbo.vw_ThongTinDiemHocSinh" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT TenHocSinh, MaHocSinh, LopHoc, MonDeThi, MaDeThi, ThoiGianThi, DiemSo FROM dbo.vw_ThongTinDiemHocSinh</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="TenHocSinh" DataSetColumn="TenHocSinh" />
+              <Mapping SourceColumn="MaHocSinh" DataSetColumn="MaHocSinh" />
+              <Mapping SourceColumn="LopHoc" DataSetColumn="LopHoc" />
+              <Mapping SourceColumn="MonDeThi" DataSetColumn="MonDeThi" />
+              <Mapping SourceColumn="MaDeThi" DataSetColumn="MaDeThi" />
+              <Mapping SourceColumn="ThoiGianThi" DataSetColumn="ThoiGianThi" />
+              <Mapping SourceColumn="DiemSo" DataSetColumn="DiemSo" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_UserDSName="DataSet1" msprop:Generator_DataSetName="DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="vw_ThongTinDiemHocSinh" msprop:Generator_RowEvHandlerName="vw_ThongTinDiemHocSinhRowChangeEventHandler" msprop:Generator_RowDeletedName="vw_ThongTinDiemHocSinhRowDeleted" msprop:Generator_RowDeletingName="vw_ThongTinDiemHocSinhRowDeleting" msprop:Generator_RowEvArgName="vw_ThongTinDiemHocSinhRowChangeEvent" msprop:Generator_TablePropName="vw_ThongTinDiemHocSinh" msprop:Generator_RowChangedName="vw_ThongTinDiemHocSinhRowChanged" msprop:Generator_RowChangingName="vw_ThongTinDiemHocSinhRowChanging" msprop:Generator_TableClassName="vw_ThongTinDiemHocSinhDataTable" msprop:Generator_RowClassName="vw_ThongTinDiemHocSinhRow" msprop:Generator_TableVarName="tablevw_ThongTinDiemHocSinh" msprop:Generator_UserTableName="vw_ThongTinDiemHocSinh">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TenHocSinh" msprop:Generator_ColumnPropNameInRow="TenHocSinh" msprop:Generator_ColumnPropNameInTable="TenHocSinhColumn" msprop:Generator_ColumnVarNameInTable="columnTenHocSinh" msprop:Generator_UserColumnName="TenHocSinh" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MaHocSinh" msprop:Generator_ColumnPropNameInRow="MaHocSinh" msprop:Generator_ColumnPropNameInTable="MaHocSinhColumn" msprop:Generator_ColumnVarNameInTable="columnMaHocSinh" msprop:Generator_UserColumnName="MaHocSinh">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LopHoc" msprop:Generator_ColumnPropNameInRow="LopHoc" msprop:Generator_ColumnPropNameInTable="LopHocColumn" msprop:Generator_ColumnVarNameInTable="columnLopHoc" msprop:Generator_UserColumnName="LopHoc" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MonDeThi" msprop:Generator_ColumnPropNameInRow="MonDeThi" msprop:Generator_ColumnPropNameInTable="MonDeThiColumn" msprop:Generator_ColumnVarNameInTable="columnMonDeThi" msprop:Generator_UserColumnName="MonDeThi" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MaDeThi" msprop:Generator_ColumnPropNameInRow="MaDeThi" msprop:Generator_ColumnPropNameInTable="MaDeThiColumn" msprop:Generator_ColumnVarNameInTable="columnMaDeThi" msprop:Generator_UserColumnName="MaDeThi" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ThoiGianThi" msprop:Generator_ColumnPropNameInRow="ThoiGianThi" msprop:Generator_ColumnPropNameInTable="ThoiGianThiColumn" msprop:Generator_ColumnVarNameInTable="columnThoiGianThi" msprop:Generator_UserColumnName="ThoiGianThi" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="DiemSo" msprop:Generator_ColumnPropNameInRow="DiemSo" msprop:Generator_ColumnPropNameInTable="DiemSoColumn" msprop:Generator_ColumnVarNameInTable="columnDiemSo" msprop:Generator_UserColumnName="DiemSo" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:vw_ThongTinDiemHocSinh" />
+      <xs:field xpath="mstns:MaHocSinh" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
